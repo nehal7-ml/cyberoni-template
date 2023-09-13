@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: "#263646";
+    scroll-behavior: smooth;
+
+}
+
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash-text { 
+  position:relative;
+  display: inline !important;
+  width: 30em;
+  margin-top: -5em;
+}
+
+.splash-img { 
+  position:relative;
+  display: inline !important;
+  width: "100%";
+  font-size: 1em;
+  color: #8783fe;
+  font-family: cursive;
+}
+
+.subpixel-antialiased{
+  letter-spacing: .7px;
+}
+
+.w-49{
+  width: 49% !important;
+}
+
+.youtube-iframe{
+  width: 100%;
+  height:400px
+}
+
+/* stars desktop */
+@media (min-width: 1024px) {
+  .spiked-star{
+    position: absolute;
+    left: 35em;
+    /* top: 40em; */
+}
+ .liquid-star{
+    position: absolute;
+    top: 33em;
+   
+    left: 43em;
+}
+
+.realistic-star {
+    position: absolute;
+    left: 6em;
+    top: 10em;
+}
+}
+
+.mobile-hero-title{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+.mobile-hero-subtitle{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+@media only screen and (max-width: 768px) {
+  .w-49{
+  
+  min-width: 91% ;
+ 
+ 
+}
+}
+
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.wave-inner {
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  right: 0;
+  height: 200%;
+  background-image: linear-gradient(to bottom, transparent 0%, #2196F3 50%, transparent 100%);
+  animation: wave 1s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}

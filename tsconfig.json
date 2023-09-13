@@ -1,0 +1,69 @@
+// ? 07/11/23 - changed
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/layouts/*": [
+        "components/layout/*"
+      ],
+      "@/shared/*": [
+        "components/shared/*"
+      ],
+      "@test/*": [
+        "__tests__/*"
+      ],
+      "@/context/*": [
+        "context/*"
+      ],
+      "@/data/*": [
+        "data/*"
+      ],
+      "@/api/*": [
+        "api/*"
+      ],
+      "@/prisma/*": [
+        "prisma/*"
+      ],
+      "@/pages/*": [
+        "pages/*"
+      ],
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/styles/*": [
+        "styles/*"
+      ]
+    },
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    //? 07/11/23 - changed to commonjs from esnext
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "__tests__/unit-tests/products/index.test.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
